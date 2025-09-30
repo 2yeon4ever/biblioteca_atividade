@@ -1,0 +1,15 @@
+# Função comum usando return
+def soma(a, b):
+    return a + b  # Retorna a soma de dois números
+
+resultado = soma(2, 3)  # Chama a função soma com 2 e 3
+print("Resultado com return:", resultado)  # Exibe o resultado da soma
+
+# Função geradora usando yield
+def contador():
+    for i in range(3):  # Loop de 0 a 2
+        yield i  # Retorna um valor por vez, criando um gerador
+
+print("Usando yield e next:")  # Mensagem explicativa
+for valor in contador():  # Itera sobre os valores gerados por contador()
+    print(valor)  # Exibe cada valor gerado
